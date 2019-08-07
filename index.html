@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="888 Spectate Frontend Test" />
     <meta name="author" content="Caio Rios" />
     <title>888 Spectate - Flip Card</title>
@@ -17,12 +18,9 @@
     <div class="container">
       <div id="card" class="card">
         <div id="card-inner" class="card-inner">
-          <div class="card-front flex">
+          <div class="card-front new-marker flex">
             <div class="card-image">
               <img src="img/card_image.png" />
-            </div>
-            <div class="card-marker">
-              <img src="img/card_new_marker.png" />
             </div>
             <div class="card-container">
               <div class="card-header">
@@ -42,7 +40,9 @@
                 </section>
               </div>
               <div class="card-footer">
-                <button class="card-button full" onclick="flipCard()">Ts&Cs</button>
+                <button class="card-button full" onclick="flipCard()">
+                  Ts&Cs
+                </button>
                 <button class="card-button full">FIND OUT MORE</button>
                 <button class="card-button full primary">JOIN NOW</button>
               </div>
@@ -56,7 +56,9 @@
               </div>
               <div class="card-footer">
                 <button class="card-button" onclick="flipCard()">BACK</button>
-                <button class="card-button highlighted primary">JOIN NOW</button>
+                <button class="card-button highlighted primary">
+                  JOIN NOW
+                </button>
               </div>
             </div>
           </div>

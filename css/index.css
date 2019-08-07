@@ -7,11 +7,6 @@ html {
   background-color: #0e0e0e;
 }
 
-@font-face {
-  font-family: "Aktiv Grotesk Condensed Hairline";
-  src: url("../fonts/aktiv_grotesk_hairline.ttf");
-}
-
 section > h1 {
   font-size: 15px;
   text-transform: uppercase;
@@ -24,6 +19,14 @@ section > p {
   font-size: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 601px) {
+  section > p {
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 .flex {
@@ -46,6 +49,12 @@ section > p {
   background-color: transparent;
 }
 
+.card-front.new-marker {
+  background-image: url("../img/card_new_marker.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -64,27 +73,17 @@ section > p {
   backface-visibility: hidden;
 }
 
-.card-front {
-  z-index: 1;
-}
-
 .card-back {
   transform: rotateY(180deg);
 }
 
 .flip {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .card-image {
   width: 255px;
   height: 100%;
-}
-
-.card-marker {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .card-container {
