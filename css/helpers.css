@@ -10,12 +10,24 @@
   flex-direction: row;
 }
 
+.half-full {
+  flex: 0.5;
+}
+
 .full {
+  flex: 1;
+}
+
+.full div, button {
   flex: 1;
 }
 
 .full-2 {
   flex: 2;
+}
+
+.full-2 div, button {
+  flex: 1;
 }
 
 .flip {
