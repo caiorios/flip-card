@@ -98,13 +98,17 @@
   font-size: 11px;
 }
 
+.card-footer > button:last-child {
+  margin-right: 0px;
+}
+
 .card-footer > .button-group {
   margin-right: 7px;
   height: 30px;
   font-size: 11px;
 }
 
-.card-footer > button:last-child {
+.card-footer > .button-group:last-child {
   margin-right: 0px;
 }
 
@@ -114,7 +118,8 @@
     min-height: 500px;
   }
 
-  .card figure, img {
+  .card figure,
+  img {
     width: 100%;
   }
 
@@ -139,13 +144,18 @@
     font-size: 11px;
   }
 
+  .card-footer > button:first-child {
+    margin: 0;
+  }
+
   .card-footer > .button-group {
     margin: 0;
+    margin-bottom: 7px;
     height: 30px;
     font-size: 11px;
   }
 
-  .card-footer > button:first-child {
+  .card-footer > .button-group:first-child {
     margin: 0;
   }
 }
