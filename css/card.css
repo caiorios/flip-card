@@ -28,7 +28,7 @@
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* needed for Safari */
-  transform: rotateX(0deg)
+  transform: rotateX(0deg); /* needed for Firefox */
 }
 
 .card-front.new-marker {
