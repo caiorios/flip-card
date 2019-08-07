@@ -106,15 +106,15 @@ section > p {
 }
 
 .card-header > h1 {
-  margin: 0px;
+  margin: 0;
   font-size: 19px;
   line-height: 20px;
 }
 
 .card-header > h2 {
-  margin: 2px;
+  margin: 0;
   font-size: 28px;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 .card-content {
