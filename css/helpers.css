@@ -18,7 +18,8 @@
   flex: 1;
 }
 
-.full div, button {
+.full div,
+button {
   flex: 1;
 }
 
@@ -26,7 +27,8 @@
   flex: 2;
 }
 
-.full-2 div, button {
+.full-2 div,
+button {
   flex: 1;
 }
 
@@ -34,16 +36,28 @@
   transform: rotateY(-180deg);
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .scrollable {
   position: relative;
   height: 100%;
+  overflow-y: auto;
 }
 
 .scrollable > div {
   overflow-y: auto;
   height: 100%;
   padding-right: 10px;
-  padding-bottom: 35px;
+}
+
+.scrollable > div > section {
+  padding-bottom: 15px;
 }
 
 .scrollable:before {
