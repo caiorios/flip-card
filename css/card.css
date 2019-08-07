@@ -1,15 +1,10 @@
 .card {
   width: 681px;
   height: 210px;
-  font-family: "Roboto", sans-serif;
   perspective: 1000px;
   background-color: transparent;
-}
-
-.card-front.new-marker {
-  background-image: url("../img/card_new_marker.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 .card-inner {
@@ -30,20 +25,28 @@
   backface-visibility: hidden;
 }
 
+.card-front.new-marker {
+  background-image: url("../img/card_new_marker.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .card-back {
   transform: rotateY(180deg);
 }
 
 .card-image {
   width: 255px;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .card-container {
   width: 100%;
-  padding: 15px;
+  height: 100%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .card-header {
@@ -57,6 +60,9 @@
   font-size: 19px;
   font-weight: 500;
   line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-header > h2 {
@@ -64,6 +70,9 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-content {
@@ -110,4 +119,40 @@
 
 .card-button.full {
   flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .card-front {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-image > img {
+    width: 100%;
+  }
+
+  .card-footer {
+    flex-direction: column-reverse;
+  }
+
+  .card-footer button {
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 2%;
+    font-size: 11px;
+  }
+
+  .card-footer button:first-child {
+    margin: 0;
+  }
 }

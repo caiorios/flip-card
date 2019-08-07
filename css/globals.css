@@ -15,9 +15,12 @@ section {
 section > h1 {
   font-size: 15px;
   text-transform: uppercase;
-  line-height: 9px;
+  line-height: 15px;
   margin-top: 2px;
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 section > p {
@@ -25,12 +28,15 @@ section > p {
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 600px) and (max-width: 720px) {
   section > h1 {
     font-size: 14px;
-    line-height: 6px;
+    line-height: 14px;
   }
 
   section > p {
