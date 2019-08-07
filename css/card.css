@@ -59,9 +59,6 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 25px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .card-header > h2 {
@@ -69,9 +66,6 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 22px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .card-header > h3 {
@@ -79,9 +73,6 @@
   font-size: 19px;
   font-weight: 500;
   line-height: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .card-content {
@@ -109,38 +100,6 @@
 
 .card-footer button:last-child {
   margin-right: 0px;
-}
-
-.card-button {
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: #e6e7e9;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
-  cursor: pointer;
-}
-
-.card-button:hover {
-  background: #c5c6c7;
-}
-
-.card-button.primary {
-  background-color: #f9bd11;
-}
-
-.card-button.primary:hover {
-  background: #c9980c;
-}
-
-.card-button.highlighted {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.card-button.full {
-  flex: 1;
 }
 
 @media screen and (max-width: 600px) {
