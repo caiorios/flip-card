@@ -107,8 +107,16 @@
   cursor: pointer;
 }
 
+.card-button:hover {
+  background: #c5c6c7;
+}
+
 .card-button.primary {
   background-color: #f9bd11;
+}
+
+.card-button.primary:hover {
+  background: #c9980c;
 }
 
 .card-button.highlighted {
