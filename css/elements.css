@@ -1,7 +1,23 @@
+.button-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-group button {
+  margin-right: 7px;
+  
+  font-size: 11px;
+}
+
+.button-group button:last-child {
+  margin-right: 0px;
+}
+
 .button {
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  height: 30px;
   background: #e6e7e9;
   color: #444446;
   box-shadow: 0px 0px 0px transparent;
@@ -16,7 +32,7 @@
 
 .button.primary {
   background-color: #f9bd11;
-  color: #603F08;
+  color: #603f08;
 }
 
 .button.primary:hover {

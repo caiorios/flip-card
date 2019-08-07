@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.card figure {
+  margin: 0;
+}
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -33,10 +37,6 @@
 
 .card-back {
   transform: rotateY(180deg);
-}
-
-.card-image {
-  width: 255px;
 }
 
 .card-container {
@@ -92,13 +92,19 @@
   flex-direction: row;
 }
 
-.card-footer button {
+.card-footer > button {
   margin-right: 7px;
   height: 30px;
   font-size: 11px;
 }
 
-.card-footer button:last-child {
+.card-footer > .button-group {
+  margin-right: 7px;
+  height: 30px;
+  font-size: 11px;
+}
+
+.card-footer > button:last-child {
   margin-right: 0px;
 }
 
@@ -106,6 +112,10 @@
   .card {
     width: 100%;
     min-height: 500px;
+  }
+
+  .card figure, img {
+    width: 100%;
   }
 
   .card-front {
@@ -118,26 +128,24 @@
     background-position: 100% 210px;
   }
 
-  .card-image {
-    width: 100%;
-  }
-
-  .card-image > img {
-    width: 100%;
-  }
-
   .card-footer {
     flex-direction: column-reverse;
   }
 
-  .card-footer button {
+  .card-footer > button {
     margin: 0;
     margin-bottom: 7px;
     padding: 2%;
     font-size: 11px;
   }
 
-  .card-footer button:first-child {
+  .card-footer > .button-group {
+    margin: 0;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .card-footer > button:first-child {
     margin: 0;
   }
 }
