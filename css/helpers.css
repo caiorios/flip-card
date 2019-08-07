@@ -36,14 +36,6 @@ button {
   transform: rotateY(-180deg);
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 .scrollable {
   position: relative;
   height: 100%;
@@ -64,7 +56,7 @@ button {
   content: "";
   position: absolute;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, white);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), white);
   height: 35px;
   margin-right: 15px;
   left: 0;
