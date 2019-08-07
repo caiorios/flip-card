@@ -11,35 +11,54 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/actions.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-image">
-          <img src="img/card_image.png" />
-        </div>
-        <div class="card-marker">
-          <img src="img/card_new_marker.png" />
-        </div>
-        <div class="card-container">
-          <div class="card-header">
-            <h1>BetBright Casino</h1>
-            <h2>£1000 Bonus</h2>
+      <div id="card" class="card">
+        <div id="card-inner" class="card-inner">
+          <div class="card-front flex">
+            <div class="card-image">
+              <img src="img/card_image.png" />
+            </div>
+            <div class="card-marker">
+              <img src="img/card_new_marker.png" />
+            </div>
+            <div class="card-container">
+              <div class="card-header">
+                <h1>BetBright Casino</h1>
+                <h2>£1000 Bonus</h2>
+              </div>
+              <div class="card-content">
+                <section>
+                  <h1>Join</h1>
+                  <p>Open an account with us, it takes just a few minutes</p>
+                </section>
+                <section>
+                  <h1>Deposit</h1>
+                  <p>
+                    Place a single bet up to £30 on any sport in our Sportsbook
+                  </p>
+                </section>
+              </div>
+              <div class="card-footer">
+                <button class="card-button full" onclick="flipCard()">Ts&Cs</button>
+                <button class="card-button full">FIND OUT MORE</button>
+                <button class="card-button full primary">JOIN NOW</button>
+              </div>
+            </div>
           </div>
-          <div class="card-content">
-            <section>
-              <h1>Join</h1>
-              <p>Open an account with us, it takes just a few minutes</p>
-            </section>
-            <section>
-              <h1>Deposit</h1>
-              <p>Place a single bet up to £30 on any sport in our Sportsbook</p>
-            </section>
-          </div>
-          <div class="card-footer">
-            <button class="card-button">Ts&Cs</button>
-            <button class="card-button">FIND OUT MORE</button>
-            <button class="card-button primary">JOIN NOW</button>
+
+          <div class="card-back flex">
+            <div class="card-container">
+              <div class="card-header">
+                <h1>Casino Bonus</h1>
+              </div>
+              <div class="card-footer">
+                <button class="card-button" onclick="flipCard()">BACK</button>
+                <button class="card-button highlighted primary">JOIN NOW</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
